@@ -3,25 +3,80 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh; /* Centrado vertical */
 }
 
 body {
-    background-color: black;
-    color: white;
-
-
+    background-color: #121212; /* Fondo oscuro elegante */
+    color: #eaeaea; /* Texto claro */
+    font-family: 'Poppins', sans-serif;
 }
 
-/*habilite el contenido del atributo type*/
+/* Muestra el contenido del atributo "type" */
 p:before {
     content: attr(type);
     display: block;
-    font-size: bold;
-    
+    font-weight: bold;
+    color: #00ffff; /* Cian brillante */
+    margin-bottom: 5px;
 }
 
 input {
-    width: 270px;
+    width: 280px;
     border: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #00bcd4; /* Azul cian */
+    background: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 8px 4px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #03dac6; /* Verde-agua al enfocar */
+    box-shadow: 0 2px 8px rgba(3, 218, 198, 0.4);
+}
+
+.formulario {
+    background: linear-gradient(135deg, #1f1c2c, #3a2a6a); /* Gradiente morado oscuro */
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+    width: 350px;
+    text-align: center;
+}
+
+
+/* Estilo del botón con id "saveBt" */
+#saveBt {
+    margin-top: 20px;
+    background-color: #00bcd4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#saveBt:hover {
+    background-color: #03dac6;
+    box-shadow: 0 0 12px rgba(3, 218, 198, 0.6);
+    transform: translateY(-2px);
+}
+
+#saveBt:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 8px rgba(3, 218, 198, 0.3);
+}
+
+
+
+h2, 
+header {
+    color: white;
+    font-size: medium;
 }
