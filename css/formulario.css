@@ -44,7 +44,6 @@ input:focus {
     padding: 30px;
     box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
     width: 350px;
-    text-align: center;
 }
 
 
@@ -60,7 +59,12 @@ input:focus {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
+
+    display: block;      /* Necesario para que el margin auto funcione */
+    margin-left: auto;   /* Centra horizontalmente */
+    margin-right: auto;  /* Centra horizontalmente */
 }
+
 
 #saveBt:hover {
     background-color: #03dac6;
@@ -79,4 +83,22 @@ h2,
 header {
     color: white;
     font-size: medium;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.msg_error {
+    background: #a6a6dd;
+    border-left: 5px  solid red;
+    padding: 10px;
+    color: #b30000;
+    display: none;
+    font-weight: bold;
+}
+
+.error_formulario {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
 }

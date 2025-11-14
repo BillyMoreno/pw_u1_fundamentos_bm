@@ -17,14 +17,18 @@
         <div class="formulario">
             <nav></nav>
             <section>
-                <form action="">
+                <form action="#">
                     <h2>Añadir nuevo estudiante</h2>
-                    <p type="Nombre:"><input type="text"></p>
-                    <p type="Apellido:"><input type="text"></p>
-                    <p type="Fecha Nacimiento:"><input type="text"></p>
-                    <p type="Email:"><input type="email"></p>
-                    <p type="Password"><input type="password"></p>
-                    <button id="saveBt">Guardar</button>
+                    <div id="id_msg_error" class="msg_error"></div>
+                    <p type="Nombre:"><input id="id_nombre" type="text"><span id="id_error_nombre"
+                            class="error_asterisco"></span></p>
+                    <p type="Apellido:"><input id="id_apellido" type="text"><span id="id_error_apellido"
+                            class="error_asterisco"></span></p>
+                    <p type="Fecha Nacimiento:"><input id="id_fecha" type="text"></p>
+                    <p type="Email:"><input id="id_email" type="email"><span id="id_error_email"
+                            class="error_asterisco"></span></p>
+                    <p type="Password"><input id="id_password" type="password"></p>
+                    <button id="saveBt" onclick="validarCampos()">Guardar</button>
                 </form>
             </section>
         </div>
