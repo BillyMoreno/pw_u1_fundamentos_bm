@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <link rel="stylesheet" href="../css/pagoTarjeta.css">
+    <script src="../js/pagoTarjeta.js"></script>
+
+</head>
+
+<body>
+    
+    <!-- Header -->
+    <header class="main-header">
+    </header>
+
+    <!-- Section principal -->
+    <section class="main-section">
+        <div class="section-header">
+            <p>Complete los datos de pago para procesar su pedido</p>
+        </div>
+
+        <div class="payment-container">
+            <div class="payment-content">
+                <div class="card-preview-section">
+                    <div class="card-preview">
+                        <div class="card-logo">VISA</div>
+                        <div class="card-number-display">1722 2646 0312 1234</div>
+                        <div class="card-details">
+                            <div class="card-holder">
+                                <div class="label">CARD HOLDER</div>
+                                <div class="value" id="cardholder-display">Mrs Kate Smith</div>
+                            </div>
+                            <div class="card-expiry">
+                                <div class="label">VALID THRU</div>
+                                <div class="value" id="expiry-display">12/25</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="payment-header">
+                        <h1>Payment Details</h1>
+                    </div>
+
+                    <form id="payment-form" class="payment-form">
+                        <div class="form-group">
+                            <label for="cardholder-name">Cardholder Name</label>
+                            <input type="text" id="cardholder-name" placeholder="Mrs. Kate Smith">
+                            <div class="error-message" id="cardholder-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" placeholder="1722 2646 0312 1234" maxlength="19">
+                            <div class="error-message" id="card-number-error"></div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="exp-date">Exp Date</label>
+                                <input type="text" id="exp-date" placeholder="MM/YY" maxlength="5">
+                                <div class="error-message" id="exp-date-error"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" placeholder="123" maxlength="3">
+                                <div class="error-message" id="cvv-error"></div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="confirm-btn">Confirm Payment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 MiTienda. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
