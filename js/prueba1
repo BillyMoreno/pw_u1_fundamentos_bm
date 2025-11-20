@@ -1,0 +1,19 @@
+function guardar() {
+
+	limpiar();
+
+	let canton = document.getElementById("id_canton").value;
+	let provincia = document.getElementById("id_provincia").value;
+
+	let destinoC = document.getElementById("td_canton");
+	let destinoP = document.getElementById("td_provincia");
+
+	destinoC.textContent = canton;
+	destinoP.textContent = provincia;
+
+}
+
+function limpiar() {
+	document.getElementById("id_canton").value = "";
+	document.getElementById("id_provincia").value = "";
+}
